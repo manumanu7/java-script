@@ -1,0 +1,31 @@
+1.write a java script function to read name and password from the form and display
+
+-->
+<html>
+<head>
+<script>
+function readvalues()
+{
+	/*read name from the forms and store in the variable
+	  variable=formname.componentname.value;
+	    		or
+		   document.formname.componentname.value*/
+	stu_name=form_reg.name.value;
+	//read password from the forms and store in the variable
+	stu_password=document.form_reg.pwd.value;
+	//print on the browser	
+	document.writeln("hello"+stu_name);
+	document.writeln("<br>");
+	document.writeln(stu_password);
+}
+</script>
+</head>
+
+<body>
+<form name="form_reg" action="serveraddress">
+name:<input type="text" name="Name" value="CSE"><br>
+password:<input type="password" name="pwd" value="123"><br>
+<input type="button" value="click here" onclick="">
+</form>
+</body>
+</html>
